@@ -1,0 +1,68 @@
+body {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.bg-orange {
+  background-color: #df4f15;
+  margin: 15px 25px;
+  border-radius: 30px;
+}
+
+.navbar .nav-link:hover {
+  color: #000 !important;
+}
+
+.navbar .btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-brand img{
+    background-color: red;
+    width: 2rem;
+}
+
+/* Hero */
+.hero h1 {
+  color: #000;
+}
+
+.hero p {
+  color: #333;
+}
+
+/* Mascote com círculo laranja */
+.circle-bg {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circle-bg img {
+  width: 85%;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .circle-bg {
+    width: 220px;
+    height: 220px;
+  }
+}

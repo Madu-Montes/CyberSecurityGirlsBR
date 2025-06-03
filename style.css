@@ -36,6 +36,10 @@ body {
 }
 
 /* Hero */
+h1, .btn {
+    font-family: 'Raleway', sans-serif;
+  }
+  
 .hero h1 {
   color: #000;
 }
@@ -57,6 +61,46 @@ body {
 .circle-bg img {
   width: 85%;
   height: auto;
+}
+
+/* Quem Somos */
+#quem-somos h2 {
+  color: #df4f15;
+}
+
+#quem-somos p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#quem-somos .btn {
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#quem-somos .btn-outline-dark {
+  border: 2px solid #df4f15;
+  color: #df4f15;
+  background-color: transparent;
+}
+
+#quem-somos .btn-outline-dark:hover {
+  background-color: #df4f15;
+  color: #fff;
+}
+
+#quem-somos .btn-dark {
+  background-color: #df4f15;
+  color: #fff;
+  border: 2px solid #df4f15;
+}
+
+#quem-somos .btn-dark:hover {
+  background-color: #c7430f;
+  border-color: #c7430f;
 }
 
 /* Responsivo */

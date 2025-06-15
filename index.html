@@ -4,175 +4,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSG - Mulheres na Cibersegurança</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@600;800&display=swap"
-    rel="stylesheet">
+  <title>CyberSecurityGirls Br</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- 🔒 NAVBAR -->
-  <nav class="navbar navbar-expand-lg sticky-top bg-orange shadow-sm py-2">
-    <div class="container-fluid px-4 d-flex align-items-center justify-content-between">
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        CSG
-        <!--<img src="./images/1.png" alt="Logo CSG" style="width: 2rem;">-->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo-csg.png" alt="Logo CSG">
       </a>
-
-      <!-- Toggler -->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navCSG"
-        aria-controls="navCSG" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Links e botão -->
-      <div class="collapse navbar-collapse justify-content-center flex-grow-0 mx-auto" id="navCSG">
-        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
-          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#quem-somos">Quem somos</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="depoimentos">Depoimentos</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Eventos</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Loja</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Contato</a></li>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#eventos">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parceiros">Parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#loja">Loja</a>
+          </li>
         </ul>
-      </div>
-
-      <!-- Botão voluntário -->
-      <div class="d-none d-lg-block">
-        <a class="btn btn-light fw-bold px-3 rounded-pill" href="#">Seja voluntário</a>
+        <a href="#" class="btn btn-voluntaria">Seja voluntária</a>
       </div>
     </div>
   </nav>
 
-  <!-- 🎯 HERO SECTION -->
-  <header class="hero d-flex align-items-center py-5">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- Texto -->
-        <div class="col-lg-6 text-center text-lg-start">
-          <h1 class="display-5 fw-bold">
-            Protegendo <br>
-            dados. <br>
-            Potencializando <br>
-            mulheres.
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start text-hero">
+          <h1>
+            Empoderando <span class="highlight">Mulheres</span><br />
+            Protegendo o <span class="highlight">Mundo Digital</span>
           </h1>
-          <p class="lead mt-3">
-            Uma comunidade para formar, apoiar e impulsionar mulheres na cibersegurança.
-          </p>
-        </div>
-
-        <!-- Imagem -->
-        <div class="col-lg-6 text-center mt-4 mt-lg-0">
-          <div class="circle-bg mx-auto">
-            <img src="./images/cybear-home.png" alt="Mascote CSG" class="img-fluid" />
+          <p>Somos a comunidade que une, inspira e transforma mulheres na segurança da informação.</p>
+          <div class="hero-buttons">
+            <a href="#sobre" class="btn btn-outline-dark">Saiba mais</a>
+            <a href="#" class="btn btn-voluntaria">Quero me voluntariar</a>
           </div>
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="./images/cybear-home.png" alt="Mascote CSG" class="hero-img">
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- 👥 QUEM SOMOS SECTION -->
-  <section id="quem-somos" class="py-5 bg-light">
+  <!-- 🌟 SEÇÃO SOBRE A CSG (MÍDIA À ESQUERDA, TEXTO À DIREITA) -->
+  <section id="sobre" class="sobre-csg py-5">
     <div class="container">
-      <div class="row align-items-center mb-5">
-        <!-- Imagem institucional -->
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="./images/comunidade.png" alt="Time da Comunidade CSG" class="img-fluid rounded shadow mb-3">
+      <div class="row g-5 align-items-center">
+
+        <!-- COLUNA MÍDIA -->
+        <div class="col-lg-6">
           <div class="row g-3">
+            <!-- Vídeo -->
+            <div class="col-12">
+              <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Vídeo Institucional"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <!-- Imagens -->
             <div class="col-6">
-              <img src="./images/cybear.png" alt="Participante 1" class="img-fluid rounded shadow">
+              <img src="./images/comunidade.png" alt="Foto CSG 2" class="img-fluid rounded shadow-sm">
             </div>
             <div class="col-6">
-              <img src="./images/CSG.png" alt="Participante 2" class="img-fluid rounded shadow">
+              <img src="./images/comunidade.png" alt="Foto CSG 1" class="img-fluid rounded shadow-sm">
             </div>
           </div>
         </div>
 
-        <!-- Texto -->
-        <div class="col-lg-6">
-          <h2 class="fw-bold mb-3">Quem somos</h2>
-          <p class="text-muted mb-4">
-            Somos a <strong>CSG - Cyber Security Girls</strong>, unidas por um propósito: promover
-            equidade de gênero e inclusão por meio da educação em segurança digital. Construímos pontes entre
-            conhecimento, empatia e oportunidades para transformar a realidade de meninas e mulheres na tecnologia.
+        <!-- COLUNA TEXTO -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h2 class="fw-bold mb-3">Sobre a <span class="text-orange">CSG</span></h2>
+          <p class="text-muted fs-5">
+            A <strong>Cyber Security Girls</strong> é uma comunidade que nasceu para empoderar mulheres e meninas por
+            meio da educação em segurança da informação.
           </p>
-          <div class="ratio ratio-16x9 mb-4">
-            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Vídeo Institucional"
-              allowfullscreen></iframe>
+          <p class="text-muted">
+            Atuamos com formações, eventos, mentorias e ações sociais para garantir espaços seguros, oportunidades reais
+            e vozes ativas na cibersegurança.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://www.instagram.com/seu_perfil" target="_blank"
+              class="btn btn-outline-dark rounded-pill px-4">Instagram</a>
+            <a href="https://www.linkedin.com/in/seu_perfil" target="_blank"
+              class="btn btn-dark rounded-pill px-4">LinkedIn</a>
           </div>
-          <div class="d-flex gap-3">
-            <a href="https://www.instagram.com/seu_perfil" class="btn btn-outline-dark rounded-pill"
-              target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/seu_perfil" class="btn btn-dark rounded-pill"
-              target="_blank">LinkedIn</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- 🌟 BIG NUMBERS CSG -->
+    <section class="big-numbers-section py-5">
+      <div class="container">
+        <div
+          class="big-numbers-wrapper d-flex flex-wrap justify-content-center align-items-center text-center gap-4 py-4 px-3 rounded-5 shadow-lg">
+
+          <div class="number-box">
+            <h3 class="number">2000+</h3>
+            <p class="label">Mentoradas</p>
+          </div>
+
+          <div class="number-box">
+            <h3 class="number">150+</h3>
+            <p class="label">Mentorias realizadas</p>
+          </div>
+
+          <div class="number-box">
+            <h3 class="number">30+</h3>
+            <p class="label">Eventos e oficinas</p>
+          </div>
+
+          <div class="number-box">
+            <h3 class="number">15+</h3>
+            <p class="label">Parcerias ativas</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- 💬 DEPOIMENTOS -->
+  <section id="depoimentos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">O que dizem sobre a CSG</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="testimonial-card shadow-sm p-4 h-100 rounded">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/depoimento1.jfif" class="avatar me-3" alt="Juliana M.">
+              <h5 class="mb-0">Juliana M.</h5>
+            </div>
+            <p class="text-muted">“Foi uma das melhores experiências de aprendizado que tive a oportunidade de ter, é
+              como se um leque abrisse e você tivesse a visão de quão grande a area de cyber é, as aulas são robustas e
+              o auxílio que elas dão para você é ótimo, realmente um espaço seguro para aprender.”</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="testimonial-card shadow-sm p-4 h-100 rounded">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/depoimento2.jpeg" class="avatar me-3" alt="Carla S.">
+              <h5 class="mb-0">Carla S.</h5>
+            </div>
+            <p class="text-muted">“Conheci a comunidade Cyber Security Girls em 2023, num momento crucial da minha
+              transição de carreira. Em 2024, tive a incrível oportunidade de participar da mentoria, onde encontrei um
+              acolhimento genuíno e adquiri conhecimentos fundamentais.”</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="testimonial-card shadow-sm p-4 h-100 rounded">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/avatar3.jpg" class="avatar me-3" alt="Renata L.">
+              <h5 class="mb-0">Renata L.</h5>
+            </div>
+            <p class="text-muted">“Vi minha filha se encantar com tecnologia após um evento da CSG. É transformador.”
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎟 EVENTOS -->
+  <section id="eventos" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nossos Eventos</h2>
+        <p class="text-muted">Acompanhe as edições em que estivemos presentes, promovendo formação e inclusão.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Evento 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./images/evento-bsides.jpg" class="card-img-top" alt="BSides 2025">
+            <div class="card-body">
+              <h5 class="card-title">BSides São Paulo 2025</h5>
+              <p class="card-text text-muted">Palestra sobre IAM e oficina interativa de revisão de acessos com os
+                participantes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evento 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./images/evento-sirena.jpg" class="card-img-top" alt="Sirena 2025">
+            <div class="card-body">
+              <h5 class="card-title">Sirena Conference 2025</h5>
+              <p class="card-text text-muted">Painel sobre equidade na segurança digital e mentorias ao vivo com
+                especialistas da comunidade.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="./images/evento-hacktown.jpg" class="card-img-top" alt="Hacktown 2024">
+            <div class="card-body">
+              <h5 class="card-title">Hacktown 2024</h5>
+              <p class="card-text text-muted">Espaço imersivo e oficina sobre ameaças digitais com dinâmicas interativas
+                para o público geral.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 💬 DEPOIMENTOS SECTION -->
-<section id="depoimentos" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5" style="color: #df4f15; font-family: 'Raleway', sans-serif;">O que dizem sobre nós</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow border-0 p-4">
-          <p class="mb-3">“Participar da CSG me deu confiança para seguir na área de segurança. Hoje sou analista júnior em uma grande empresa.”</p>
-          <h6 class="fw-bold mb-0">Juliana M.</h6>
-          <small class="text-muted">Ex-mentorada CSG</small>
-        </div>
+<!-- Parceiros -->
+<section id="parceiros" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-2 section-title">Nossos Parceiros</h2>
+    <p class="mb-5">Conheça as empresas e instituições que apoiam nossa missão.</p>
+
+    <div class="row justify-content-center g-4 mb-4">
+      <div class="col-6 col-md-3">
+        <img src="./images/parceiros/tempest.png" alt="Tempest Security" class="img-fluid rounded shadow-sm mb-2">
+        <p class="fw-medium">Tempest Security</p>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow border-0 p-4">
-          <p class="mb-3">“A comunidade me acolheu quando eu mais precisava. Aqui encontrei propósito, aprendizado e amigas incríveis.”</p>
-          <h6 class="fw-bold mb-0">Carla S.</h6>
-          <small class="text-muted">Voluntária</small>
-        </div>
+      <div class="col-6 col-md-3">
+        <img src="./images/parceiros/fiap.png" alt="FIAP" class="img-fluid rounded shadow-sm mb-2">
+        <p class="fw-medium">FIAP</p>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow border-0 p-4">
-          <p class="mb-3">“Vi minha filha se encantar com tecnologia após um evento da CSG. É transformador.”</p>
-          <h6 class="fw-bold mb-0">Renata L.</h6>
-          <small class="text-muted">Mãe de participante</small>
-        </div>
+      <div class="col-6 col-md-3">
+        <img src="./images/parceiros/oracle.png" alt="Oracle" class="img-fluid rounded shadow-sm mb-2">
+        <p class="fw-medium">Oracle</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="./images/parceiros/google.png" alt="Google" class="img-fluid rounded shadow-sm mb-2">
+        <p class="fw-medium">Google</p>
       </div>
     </div>
+
+    <a href="https://wa.me/5511953714822?text=Gostaria%20de%20ser%20um%20parceiro%20da%20CyberSecurityGirls" target="_blank" class="btn btn-parceiro px-4 py-2 fw-bold rounded-pill">Torne-se um Parceiro</a>
   </div>
 </section>
 
-<!-- 🎟 EVENTOS SECTION -->
-<section id="eventos" class="py-5 bg-white">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5" style="color: #df4f15; font-family: 'Raleway', sans-serif;">
-      Eventos que participamos
-    </h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow border-0">
-          <img src="./images/bsides2025.jpg" class="card-img-top" alt="BSides São Paulo 2025">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">BSides São Paulo 2025</h5>
-            <p class="card-text text-muted">Participamos com palestra e oficina de conscientização sobre IAM.</p>
+  <section id="loja" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5 text-orange">Nossa Loja</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <!-- Produto 1 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto1.png" class="card-img-top" alt="Camiseta preta básica">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Camiseta preta básica</h5>
+              <p class="card-text">T-shirt preta com estampa CSG.</p>
+              <p class="fw-bold text-primary">R$ 49,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 shadow border-0">
-          <img src="./images/sirena2025.jpg" class="card-img-top" alt="Sirena 2025">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Sirena Conference 2025</h5>
-            <p class="card-text text-muted">Conduzimos painel sobre equidade de gênero em segurança digital.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Adicione mais blocos conforme necessário -->
-    </div>
-  </div>
-</section>
 
+        <!-- Produto 2 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto2.png" class="card-img-top" alt="Caneca DEV seguro">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Caneca DEV seguro</h5>
+              <p class="card-text">No coffee, no security.</p>
+              <p class="fw-bold text-primary">R$ 29,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto3.png" class="card-img-top" alt="Kit promocional">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Kit promocional</h5>
+              <p class="card-text">Ecobag + t-shirt exclusiva.</p>
+              <p class="fw-bold text-primary">R$ 69,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto4.png" class="card-img-top" alt="Caderno CSG">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Caderno CSG</h5>
+              <p class="card-text">Anote sem usar senhas no papel!</p>
+              <p class="fw-bold text-primary">R$ 19,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto5.png" class="card-img-top" alt="Adesivo CSG">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Adesivo CSG</h5>
+              <p class="card-text">Cole onde quiser, com estilo!</p>
+              <p class="fw-bold text-primary">R$ 9,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto6.png" class="card-img-top" alt="Chaveiro CyBear">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Chaveiro CyBear</h5>
+              <p class="card-text">Leve a mascote com você!</p>
+              <p class="fw-bold text-primary">R$ 14,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto6.png" class="card-img-top" alt="Chaveiro CyBear">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Chaveiro CyBear</h5>
+              <p class="card-text">Leve a mascote com você!</p>
+              <p class="fw-bold text-primary">R$ 14,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="col">
+          <div class="card h-100 text-center p-3 d-flex flex-column justify-content-between">
+            <img src="./images/produto6.png" class="card-img-top" alt="Chaveiro CyBear">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Chaveiro CyBear</h5>
+              <p class="card-text">Leve a mascote com você!</p>
+              <p class="fw-bold text-primary">R$ 14,90</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- Fim da .row -->
+
+      <!-- Botão Ver Mais -->
+      <div class="text-center mt-4">
+        <a href="https://wa.me/5511953714822" target="_blank"
+          class="btn btn-primary px-4 py-2 rounded-pill fw-semibold">
+          Ver Mais Produtos
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- Rodapé -->
+<footer class="footer-custom py-4 text-white">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      <!-- Logo + Frase -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="./images/logo-cybr.png" alt="Logo CYBR" class="mb-2" style="max-height: 40px;">
+        <p class="mb-0 small">Levando conhecimento em cibersegurança<br>para todos.</p>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-2">Contato</h5>
+        <p class="mb-1">Email: <a href="mailto:contato@instituto.com" class="text-white text-decoration-underline">contato@instituto.com</a></p>
+        <p class="mb-0">WhatsApp: <a href="https://wa.me/5511953714822" class="text-white text-decoration-underline" target="_blank">(11) 95371-4822</a></p>
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-2">Siga-nos</h5>
+        <a href="https://www.instagram.com/seu_perfil" class="text-white me-3 fs-4" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/seu_perfil" class="text-white fs-4" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-top border-white mt-4 mb-3">
+
+    <!-- Direitos -->
+    <p class="text-center small mb-0">© 2025 | Cyber School & Labs. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

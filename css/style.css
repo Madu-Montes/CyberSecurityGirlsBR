@@ -175,9 +175,14 @@ body {
 }
 
 .footer-custom {
-  background-color: #673de6;
+  background-color: #df4f15;
   color: #fff;
   font-size: 0.95rem;
+}
+
+.footer-custom img{
+  background-color: red;
+  width: 5rem;
 }
 
 .footer-custom a {

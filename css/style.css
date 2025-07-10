@@ -257,6 +257,15 @@ body {
   object-fit: cover;
 }
 
+/* ===== EVENTOS ===== */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* ou 250px, ajuste conforme desejar */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px; /* opcional, para bordas arredondadas */
+}
+
 /* ===== RODAPÉ ===== */
 .footer-custom {
   background-color: #df4f15;
@@ -276,4 +285,26 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+/* Botão fixo para subir ao topo */
+#btnTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #df4f15;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; 
+}
+#btnTopo:hover {
+    background-color: #333;
+}
 

@@ -260,11 +260,20 @@ body {
 /* ===== EVENTOS ===== */
 .card-img-top {
   width: 100%;
-  height: 200px; /* ou 250px, ajuste conforme desejar */
+  height: 200px; 
   object-fit: cover;
   object-position: center;
-  border-radius: 8px; /* opcional, para bordas arredondadas */
+  border-radius: 8px; 
 }
+
+#apoiadores a{
+  margin-top: 2.5rem;
+}
+
+#apoiadores a:hover{
+  color: #fff;
+}
+
 
 /* ===== RODAPÉ ===== */
 .footer-custom {
